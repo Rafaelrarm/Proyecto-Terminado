@@ -24,11 +24,28 @@ def listar_estudiantes(request):
 
 def formulario_curso(request):
 
-    if request.method == "POST":
+    if request.method == 'POST':
+
+        mi_formulario = CursoFormulario(request.POST)
+
+        print(mi_formulario)
+
+        if mi_formulario.is_valid:
+
+            informacion = mi_formulario.cleaned_data
+
+            curso = Curso (nombre=informacion['curso'], camada=informacion['camada'])
+
+            curso.save()
+
+            return render(request, "mi_app/blog.html")
         pass
     else:
+
         mi_formulario= CursoFormulario()
-        return render (request, "mi_app/curso_formulario.html", {"mi_formulario": mi_formulario})
+
+        return render(request, "mi_app/curso_formulario.html", {"mi_formulario":mi_formulario})
+
 
 def formulario_busqueda(request):
 
@@ -41,3 +58,8 @@ def formulario_busqueda(request):
         return render(request, "mi_app/curso_busqueda.html", {"cursos": cursos})
 
     return render(request, "mi_app/curso_busqueda.html", {"busqueda_formulario": busqueda_formulario})
+
+def blog_personal(request):
+    return render (request, "mi_app/blog.html",{})
+
+

@@ -1,3 +1,6 @@
+{% extends 'mi_app/blog.html' %}
+
+{% block up %}
 <form action= "" method="POST">
 {% csrf_token %}
 
@@ -10,3 +13,5 @@
 </form>
 
 <h2>{{mensaje}}</h2>
+
+{% endblock %}
