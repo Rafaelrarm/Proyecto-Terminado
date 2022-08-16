@@ -1,6 +1,12 @@
+{% extends 'mi_app/blog_list.html'%}
+{%block up %}
 <form method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <button type="submit">Iniciar Sesión</button>
 </form>
 
+{%endblock%}
+{%block perro%}
+
+{%endblock%}

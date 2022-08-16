@@ -1,11 +1,19 @@
+{% extends 'mi_app/blog_list.html'%}
+{%block up%}
 <a href="{% url 'blog_list' %}">Volver a Lista Blogs</a>
 <a href="{% url 'User-update' user.id %}">Editar Perfil</a>
 
+<form class="text-white mt-0" method="post">
 <ul>
+    
     <li>Nombre: {{object.first_name}}<li>
     <li>Apellido: {{object.last_name}}<li>
     <li>Correo electrónico: {{object.email}} </li>
     <li>Nombre de Usuario: {{object.username}}</li>
 </ul>
-
+</form>
 <img height="128" src="{{ object.avatar_set.first.image.url }}" />
+{%endblock%}
+{%block perro%}
+
+{%endblock%}
