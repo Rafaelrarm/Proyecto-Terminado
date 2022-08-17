@@ -1,5 +1,13 @@
+{% extends 'mi_app/blog_list.html'%}
+{%block up %}
+
 <form method="post">{% csrf_token %}
     <p>¿Está Seguro que quiere borrar? "{{ object }}"?</p>
     {{ form }}
     <input type="submit" value="Confirmar">
 </form>
+
+{%endblock%}
+{%block perro%}
+
+{%endblock%}

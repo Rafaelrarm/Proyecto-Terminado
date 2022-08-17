@@ -1,3 +1,6 @@
+{% extends 'mi_app/blog_list.html'%}
+{%block up %}
+
 <a href="{% url 'blog_list' %}">Volver a Lista</a>
 
 <form method="post">
@@ -5,3 +8,8 @@
     {{ form.as_p }}
     <input type="submit" value="Guardar">
 </form>
+
+{%endblock%}
+{%block perro%}
+
+{%endblock%}
