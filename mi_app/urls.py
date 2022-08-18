@@ -7,7 +7,6 @@ formulario_curso, formulario_busqueda, blog_personal)
 from mi_app import views
 
 
-
 urlpatterns = [
     
     path('listar-cursos/', listar_cursos),
@@ -33,3 +32,4 @@ urlpatterns = [
     
     ]
 
+urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

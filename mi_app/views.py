@@ -79,7 +79,7 @@ class SignUpView(SuccessMessageMixin, CreateView):
 
 class BloggerProfile(DetailView):
 
-    model = User
+    model = Avatar
     template_name = "mi_app/blogger_detail.html"
 
 class UserUpdate(LoginRequiredMixin, UpdateView):
