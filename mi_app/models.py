@@ -18,7 +18,8 @@ class Estudiante(models.Model):
 
 #loggin
 
-class Avatar(models.Model):
+class Publisher(models.Model):
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     fecha_creacion = models.DateField(auto_now_add=True)
     image = models.ImageField(upload_to="avatars", null=True, blank=True)

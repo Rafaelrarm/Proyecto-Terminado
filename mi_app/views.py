@@ -10,7 +10,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.views.generic import ListView, TemplateView, View, ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
-from mi_app.models import Curso, Estudiante, BlogModel, Avatar
+from mi_app.models import Curso, Estudiante, BlogModel, Publisher
 from mi_app.forms import CursoFormulario, CursoBusquedaFormulario
 from multiprocessing import context
 from datetime import date, datetime
@@ -79,7 +79,7 @@ class SignUpView(SuccessMessageMixin, CreateView):
 
 class BloggerProfile(DetailView):
 
-    model = Avatar
+    model = Publisher
     template_name = "mi_app/blogger_detail.html"
 
 class UserUpdate(LoginRequiredMixin, UpdateView):

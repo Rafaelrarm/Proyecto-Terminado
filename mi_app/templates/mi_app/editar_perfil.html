@@ -3,10 +3,10 @@
 
 <a href="{% url 'User-update' user.id %}">Editar Perfil</a>
 <ul class="text-white">
-    <li>Nombre de Usuario: {{object.user}}</li>
-    <li>Nombre: {{object.user.first_name}}<li>
-    <li>Apellido: {{object.user.last_name}}<li>
-    <li>Correo electronico: {{object.user.email}} </li>
+    <li>Nombre de Usuario: {{object}}</li>
+    <li>Nombre: {{object.first_name}}<li>
+    <li>Apellido: {{object.last_name}}<li>
+    <li>Correo electronico: {{object.email}} </li>
     <li>Fecha de creacion: {{object.fecha_creacion}} </li>
 </ul>
 <img height="128" src="{{ object.image.url }}" > </img>
@@ -15,4 +15,3 @@
 {%block perro%}
 
 {%endblock%}
-
