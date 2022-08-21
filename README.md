@@ -1,4 +1,10 @@
 # Proyecto-final realizado por Rafael y Quimey
+
+CASOS DE PRUEBAS LINK A DRIVE: 
+
+https://docs.google.com/spreadsheets/d/1B4moB1th5H5-ERMqw-d-5GLGdp-X6TYH/edit?usp=sharing&ouid=106955430778422038598&rtpof=true&sd=true
+
+
 Entrega final de CoderHouse python, este codigo contiene:
 
 -Vistas
