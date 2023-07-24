@@ -1,4 +1,4 @@
-# Proyecto-final realizado por Rafael y Quimey
+# Proyecto-final realizado por Rafael Rodriguez
 
 CASOS DE PRUEBAS LINK A DRIVE: 
 
